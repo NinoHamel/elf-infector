@@ -200,8 +200,8 @@ find_pt_note:
         if_not_pt_note:
             mov rax, 1
             mov rdi, 1
-            mov rsi, if_pt_note_string
-            mov rdx, if_pt_note_string_len
+            mov rsi, if_not_pt_note_string
+            mov rdx, if_not_pt_note_string_len
             syscall
             jmp exit_program
 
