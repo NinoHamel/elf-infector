@@ -24,7 +24,7 @@ J'ai aussi eu le temps de vérifier si le fichier était dans le format ELF. Pou
 
 J'ai aussi essayé de mettre un maximum de debug dans le programme pour afficher les étapes ou les potentielles erreurs que celui-ci pouvait avoir. J'ai voulu parser le header de l'ELF dans une structure mais sans succès : je n'arrivais à travailler qu'avec le buffer. En utilisant **pwndbg**, j'avais soit rien dans ma structure, soit je n'arrivais pas à accéder aux valeurs dedans.
 
-### ⚙️ Améliorations et correctionss
+### ⚙️ Améliorations et corrections
 
 Plusieurs semaines plus tard, j'ai continué le projet en rajoutant un appel syscall avec ```stat``` pour tester si l'input était un dossier ou non. Avec ```stat```, j'ai réussi à débloquer mon problème et à mettre le buffer dans ma structure ```Elf_Header```, ce qui m'a permis d'avoir facilement accès à des valeurs comme le nombre de **Program Headers** ou le **point d'entrée** du programme par exemple.
 
