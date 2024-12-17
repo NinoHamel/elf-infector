@@ -3,7 +3,7 @@
 ## 📝 Introduction
 Ce projet implémente un virus informatique simple qui modifie des binaires ELF pour y injecter un payload. Le code est écrit en assembleur x86_64 et cible les systèmes Linux.
 
-## 🛠️ ️Pour compile et lancer le programme :
+## 🛠️ ️Pour compiler et lancer le programme :
 
 ```
 nasm -f elf64 -o programme.o projet_elf.s && ld -o programme programme.o
